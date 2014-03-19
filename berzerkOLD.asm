@@ -2180,7 +2180,7 @@ DetermineRobotToMove
    sta compRobotToMove              ; set the computed robot number to move
    rts
 
-BOUNDARY 0
+   BOUNDARY 0
 MazePF0Data
 MazePFData_0
    .byte $00 ; |........|
@@ -2666,7 +2666,7 @@ MazePF1Data_3
    .byte $00 ; |........|
    .byte $00 ; |........|
        
-   ;BOUNDARY (H_KERNEL - 7)
+   BOUNDARY (H_KERNEL - 7)
 
 PlayerSprites
 PlayerStationary
@@ -2762,7 +2762,7 @@ PlayerFireUp
    .byte $1C ; |...XXX..|
    .byte $00 ; |........|
        
-   ;BOUNDARY 0
+   BOUNDARY 0
    
 MazePF2Data
 MazePF2Data_0
@@ -2902,7 +2902,7 @@ MazePF2Data_3
       .byte $00 ; |........|
    REPEND
    
-   ;BOUNDARY (H_KERNEL - 7)
+   BOUNDARY (H_KERNEL - 7)
    
 EvilOttoSprites
 EvilOttoSprite_0
@@ -3281,7 +3281,7 @@ RobotMissileDelayTable
    .byte ROBOT_MISSILE_DELAY_6
    .byte ROBOT_MISSILE_DELAY_7
    
-   ;BOUNDARY 252
+   BOUNDARY 252
    
    .word Start
    .word 0
